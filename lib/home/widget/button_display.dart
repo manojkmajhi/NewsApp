@@ -14,7 +14,11 @@ class ButtonDisplayItem extends StatelessWidget {
       const SizedBox(width: 5),
       ElevatedButton(
         onPressed: () {},
-        style: ElevatedButton.styleFrom(),
+        style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(14),
+          side: const BorderSide(color: Colors.green, width: 1.1),
+        )),
         child: Text(
           hotnews,
           style: const TextStyle(
